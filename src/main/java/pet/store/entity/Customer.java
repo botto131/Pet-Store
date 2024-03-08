@@ -35,6 +35,16 @@ public class Customer {
     @ToString.Exclude    
     @ManyToMany(mappedBy = "customers", cascade = CascadeType.PERSIST)
     Set<PetStore> petStores;
+
+	public Long getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	}
     
 }
 

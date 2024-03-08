@@ -40,7 +40,17 @@ public class Employee {
     @ToString.Exclude  
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "pet_store_id")
-    private PetStore petStore; 
+    private PetStore petStore;
+
+	public Long getId() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return null;
+	} 
 }
 
 
