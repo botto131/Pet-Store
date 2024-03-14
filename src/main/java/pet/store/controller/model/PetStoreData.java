@@ -1,5 +1,6 @@
 package pet.store.controller.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 import lombok.Data;
@@ -29,8 +30,10 @@ public class PetStoreData {
 	    
 	    private String petStorePhone;
 	
-	Set <PetStoreCustomer> customers; 
-	Set <PetStoreEmployee> employees; 
+	Set <PetStoreCustomer> customers = new HashSet<>();
+	
+	Set <PetStoreEmployee> employees = new HashSet<>();
+	
 	
 	public PetStoreData(PetStore petStore) {
 		petStoreId = petStore.getPetStoreId();
@@ -75,6 +78,21 @@ public class PetStoreData {
             
             
         }
+
+
+
+		
+
+
+		
+
+
+
+		
+		}
+
+
+
     }
 	@Data 
 	@NoArgsConstructor
@@ -97,15 +115,11 @@ public class PetStoreData {
 	        	employeeFirstName = employee.getEmployeeFirstName();
 	        	employeeLastName = employee.getEmployeeLastName();
 	        	employeePhone = employee.getEmployeePhone();
-	        	employeePhone = employee.getEmployeePhone();
+	        	employeePhone = employee.getEmployeeJobTitle();
 	        	
 }
-	 }
-	public Long getId() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
+	}
 	
-}
+	
 

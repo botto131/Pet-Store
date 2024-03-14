@@ -50,6 +50,14 @@ public class Employee {
 	public String getName() {
 		// TODO Auto-generated method stub
 		return null;
+	}
+
+	
+	
+
+	public void setName(Object name) {
+		// TODO Auto-generated method stub
+		
 	} 
 }
 
